@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="cheat">
+      <UniqueIdentifier>{b31ca04b-1466-42f1-a217-8c2abdfbe87b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\impl">
+      <UniqueIdentifier>{47c4cb7c-65f2-4d6c-ba09-416f8fd79f36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\impl\core">
+      <UniqueIdentifier>{b7066af0-c139-438d-8cfa-66b3491616ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\impl\core\hooker">
+      <UniqueIdentifier>{e7947523-c8f7-43a9-b870-aea5d16e0a83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\impl\sdk">
+      <UniqueIdentifier>{6d2dc465-48c2-4924-80b0-d7f4e94cb741}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\impl\sdk\sdk structs">
+      <UniqueIdentifier>{907b35fd-e94c-4af7-a8d7-1c7789d334ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\impl\sdk\engine">
+      <UniqueIdentifier>{1432bea5-d432-4ca2-a85e-3a8b2338a977}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\impl\core\no winapi">
+      <UniqueIdentifier>{7738c388-b549-4a86-9882-c89e0ab2b3dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\impl\core\no winapi\library">
+      <UniqueIdentifier>{4596e221-4e9a-4371-a706-94f52ff63a2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\impl\sdk\sdk structs\library">
+      <UniqueIdentifier>{4c892aab-5979-408d-94aa-ca98a6851aea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="win_api.hpp">
+      <Filter>cheat\impl\core\no winapi</Filter>
+    </ClInclude>
+    <ClInclude Include="library_definitions.hpp">
+      <Filter>cheat\impl\core\no winapi\library</Filter>
+    </ClInclude>
+    <ClInclude Include="hook.hpp">
+      <Filter>cheat\impl\core\hooker</Filter>
+    </ClInclude>
+    <ClInclude Include="unreal_structs.hpp">
+      <Filter>cheat\impl\sdk\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk.hpp">
+      <Filter>cheat\impl\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk_structure.hpp">
+      <Filter>cheat\impl\sdk\sdk structs</Filter>
+    </ClInclude>
+    <ClInclude Include="impl.hpp">
+      <Filter>cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="lazy_importer.hpp">
+      <Filter>cheat\impl\core\no winapi\library</Filter>
+    </ClInclude>
+    <ClInclude Include="engine_library.hpp">
+      <Filter>cheat\impl\sdk\sdk structs\library</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
